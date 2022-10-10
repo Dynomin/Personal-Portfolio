@@ -27,16 +27,227 @@
         </div>
     </header>
 <!-- End of the header -->
+<!-- education section starts  -->
+<section class="about">
+    <div class="main">
+        <img src="Vaibhav Gupta.jpeg">
+        <div class="about-text">
+            <h2>Vaibhav Gupta</h2>
+            <h5>Designer, Coder, Open-Source Contributor and Founder</h5>
+            <p>Hello everyone, I am Vaibhav Gupta, a 2nd Year Student from MIT-WPU. Currently pursuing Bachelor of Design (UX Major). I have completed many internships and currently looking for work and developing my community, Optimistic Overviews.</p>
+            <button type="button"><a href="contact.html"><font face="arial" color="white" size="3">Contact me</font></a></button>
+        </div>
+    </div>
+<style>
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: black;
+}
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: red;
+	font-size: 60px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: white;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+button{
+	background-color:red;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid red;
+	cursor: pointer;
+}
+</style>
+</section>
+<!-- End of the education -->
 <!-- Start of the Main -->
 <section class="Main">
-<div style="height:75px;width:100%">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod soluta natus. Magni tempora animi illo ea accusamus ex deserunt odio facere deleniti molestiae qui eaque in illum praesentium sunt iste accusantium nobis repellat aspernatur alias, architecto consectetur voluptate dolore! Saepe, enim rem nam dolorem tempore blanditiis perspiciatis repellat architecto.</p>
+<div style="height:35px;width:100%">
+<h2 align="center"><font face="arial" color="red" size="5">Work Experience</font></h2>
 </div>
 </section>
 <!-- End of the Main -->
 <!-- Start of the Center -->
+<section class="timeline-section">
+	<div class="timeline-items">
+		<div class="timeline-item">
+			<div class="timeline-dot"></div>
+			<div class="timeline-date">November, 2021 - Present</div>
+			<div class="timeline-content">
+				<h3><font face="arial" color="red" size="3">Hashnode Ambassador</font></h3>
+				<p>Writing articles and publishing them for free of cost to make it publically available.</p>
+			</div>
+		</div>
+		<div class="timeline-item">
+			<div class="timeline-dot"></div>
+			<div class="timeline-date">April, 2022- Present</div>
+			<div class="timeline-content">
+				<h3><font face="arial" color="red" size="3">LBT Community - Core Team Member</font></h3>
+				<p>Organizing events, solving queries and organizing events in the discord server</p>
+			</div>
+		</div>
+		<div class="timeline-item">
+			<div class="timeline-dot"></div>
+			<div class="timeline-date">April, 2022 - Present</div>
+			<div class="timeline-content">
+				<h3><font face="arial" color="red" size="3">Design Mentor at Cuvette Tech</font></h3>
+				<p>Helping members in the server in Designing (Adobe Illustrator, Adobe Photoshop, Adobe XD, Figma)</p>
+			</div>
+		</div>
+        <div class="timeline-item">
+			<div class="timeline-dot"></div>
+			<div class="timeline-date">September, 2022- Present</div>
+			<div class="timeline-content">
+				<h3><font face="arial" color="red" size="3">Founder at Optimistic Overviews</font></h3>
+				<p>A community built to connect designers and coders for hackathons and various other competitions.</p>
+			</div>
+		</div>
+        <div class="timeline-item">
+			<div class="timeline-dot"></div>
+			<div class="timeline-date">October, 2022</div>
+			<div class="timeline-content">
+				<h3><font face="arial" color="red" size="3">Contributor in Hacktober</font></h3>
+				<p>I submitted 4 PR's and all of them got approved. I am also an Open-Source Contributor</p>
+			</div>
+		</div>
+		
+	</div>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.timeline-section{
+	background-color: black;
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: red;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: red;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
 
-<!-- End of the Center -->
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
+    </style>
+</section>
+<!-- skills section ends -->
+
 <!-- Start of the Center -->
 
 <!-- End of the Center -->
